@@ -1,23 +1,22 @@
 Modificaciones:
     General:
-        + Instalado Tailwind, para manejor de componentes y css
-        + Instalado @fullhuman/postcss-purgecss para eliminar los archivos, css, que no se esten usando en produccion.
+        + Instalado Vue.
+        + Instalado VueSax.
     app:
-        controller:
-            dashboard_controller:
-                + Controller agregado.
-                ? Este controller funciona para poder administrar la ventana principal del usuario cuando se logea.
-            login_controller:
-                + Controller agregado.
-                ? Este controller funciona para poder administrar la ventana del login y signup.
+        javascript:
+            view:
+                Login:
+                    + vista creada.
         views:
+            layaouts:
+                application.html.erb:
+                    + Agregado CDN para usar las clases de Tailwind.
+                    + Agregada fuente de google, para Twitter.
+                    + Agregados iconos de material design.
+                    ? Este archivo contedrá el reder de la app realizada con vue, dentro del div con etiqueta 'data-behavior="vue"'
             login:
                 index.html.erb:
-                    + Vista creada.
-                    ? Esta vista permitirá el poder ingregar al dashboard.
-                    ? Template terminado, ahora solo falta hacer la logica.
+                    ? Este archivo ahora solo contiene el renderizado de su componente, vista, ubicado en 'app/javascript/views/Login.vue'.
             signup:
                 index.html.erb:
-                    + Vista creada.
-                    ? Esta vista permitirá el poder registrarse dentro de la app.
-                    ? Template en proceso de desarrollo.
+                    ? Este archivo ahora solo contiene el renderizado de su componente, vista, ubicado en 'app/javascript/views/SignUp.vue'.

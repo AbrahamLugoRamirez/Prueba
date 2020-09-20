@@ -1,33 +1,25 @@
-<div class="bg-blue-twitter_dark h-screen text-white p-5 flex flex-row justify-center items-center">
-    <form id="formCard" submit="/signup" class="flex flex-col xl:w-1/3 lg:w-1/3 md:w-1/2 sm:w-screen xs:w-screen">
-        <input type="text" name="name" id="name" class="input-text w-5/6" placeholder="Name">
-        <div>
-            <input type="password" name="password" id="password" class="input-text w-5/6" placeholder="Password">
-            <span class="mdi mdi-eye cursor-pointer text-xl" id="eyeicon" onclick="showPassword()"></span>
-        </div>
-    </form>
-</div>
-
-<script>
-    let eyeIconHasBeenPressed = false
-
-    function changeEyeIcon() {
-        eyeicon = document.getElementById("eyeicon")
-        eyeIconHasBeenPressed = !eyeIconHasBeenPressed 
-        if(eyeIconHasBeenPressed) {
-            eyeicon.classList.remove("mdi-eye")
-            eyeicon.classList.add("mdi-eye-off")
-        } else {
-            eyeicon.classList.remove("mdi-eye-off")
-            eyeicon.classList.add("mdi-eye")
-        }
-    }
-
-    async function showPassword() {
-        await changeEyeIcon()
-        //show password code
-        /*
-            here is the code
-        */
-    }
-</script>
+<signup-view></signup-view>
+<!-- Help Links -->
+<vs-row
+    id="extraLinks"
+    justify="space-around"
+    class="grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 xs:grid-cols-2 text-white px-10 text-center"
+>
+    <div>About</div>
+    <div>Help Center</div>
+    <div>Terms</div>
+    <div>Privacy Policy</div>
+    <div>Cookies</div>
+    <div>Add info</div>
+    <div>Blog</div>
+    <div>Status</div>
+    <div>Jobs</div>
+    <div>Brand</div>
+    <div>Advertise</div>
+    <div>Marketing</div>
+    <div>Bussinesess</div>
+    <div>Developers</div>
+    <div>Directory</div>
+    <div>Settings</div>
+    <div>@ 2020 Twitter, inc</div>
+</vs-row>

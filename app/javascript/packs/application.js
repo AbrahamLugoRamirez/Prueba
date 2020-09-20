@@ -16,17 +16,23 @@ require("channels");
 // const imagePath = (name) => images(name, true)
 
 import Vue from "vue/dist/vue.esm.js";
-import App from "../app.vue";
-import ButtonComponent from "../Button.vue";
+import ButtonComponent from "../components/Button.vue";
+import InputComponent from "../components/Input.vue";
 import TurbolinksAdapter from "vue-turbolinks";
 import Vuesax from "vuesax";
 import "vuesax/dist/vuesax.css";
+
+// Views
+import LoginView from '../views/Login.vue'
+import SignupView from '../views/SignUp.vue'
 
 Vue.use(Vuesax);
 Vue.use(TurbolinksAdapter);
 
 Vue.component("c-button", ButtonComponent)
-Vue.component("c-app", App)
+Vue.component("c-input", InputComponent)
+Vue.component("login-view", LoginView)
+Vue.component("signup-view", SignupView)
 
 document.addEventListener("turbolinks:load", () => {
   new Vue({
