@@ -1,0 +1,23 @@
+Modificaciones:
+    General:
+        + Instalado Tailwind, para manejor de componentes y css
+        + Instalado @fullhuman/postcss-purgecss para eliminar los archivos, css, que no se esten usando en produccion.
+    app:
+        controller:
+            dashboard_controller:
+                + Controller agregado.
+                ? Este controller funciona para poder administrar la ventana principal del usuario cuando se logea.
+            login_controller:
+                + Controller agregado.
+                ? Este controller funciona para poder administrar la ventana del login y signup.
+        views:
+            login:
+                index.html.erb:
+                    + Vista creada.
+                    ? Esta vista permitirá el poder ingregar al dashboard.
+                    ? Template terminado, ahora solo falta hacer la logica.
+            signup:
+                index.html.erb:
+                    + Vista creada.
+                    ? Esta vista permitirá el poder registrarse dentro de la app.
+                    ? Template en proceso de desarrollo.
