@@ -1,0 +1,8 @@
+.input {
+    @apply .rounded .py-2 .px-4 .bg-gray-200 .text-gray-800 .font-bold .text-xl;
+}
+
+.input:focus {
+    border-bottom-color: var(--blue);
+    @apply .border-b-2;
+}

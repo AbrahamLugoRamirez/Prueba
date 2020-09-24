@@ -1,0 +1,28 @@
+  <div class="flex flex-col justify-center items-center h-screen">
+    <div class="mdi mdi-twitter text-4xl" style="color: var(--blue)"></div>
+    <div class="text-3xl font-extrabold">Log in</div>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field mt-5">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"input", placeholder:'email' %>
+      </div>
+
+      <div class="field mt-2">
+        <%= f.password_field :password, autocomplete: "current-password", class:'input', placeholder:'email'%>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field mt-6 flex items-center">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me, class: "ml-2 font-bold text-xl" %>
+        </div>
+      <% end %>
+
+      <div class="actions mt-4">
+        <%= f.submit "Log in", class: 'btn w-full' %>
+      </div>
+    <% end %>
+
+    <div class="mt-8 text-center font-bold">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>

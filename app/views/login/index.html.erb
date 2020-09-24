@@ -1,3 +1,18 @@
-<h1 class="text-6xl mt-5">Login#index</h1>
-<button class="rounded-full bg-blue-100">hola puto</button>
-<p>Find me in app/views/login/index.html.erb</p>
+<div class="h-screen">
+    <div class="flex xs:flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row h-screen w-full">
+        <div style="background-color: var(--blue)" class="h-screen xs:w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex justify-center items-center">
+            <div class="flex items-center">
+                <div class="mdi mdi-chat-outline mr-2 text-4xl text-white"></div>
+                <div class="text-white text-4xl font-extrabold">Join the conversation</div>
+            </div>
+        </div>
+        <div class="h-screen xs:w-full sm:w-full md:w-1/2 lg:w-full xl:w-1/2 flex justify-center items-center">
+            <div class="w-3/4">
+                <div class="mdi mdi-twitter text-6xl" style="color: var(--blue)"></div>
+                <div class="font-bold text-4xl">See what’s happening in the world right now</div>
+                <button class="btn w-full" onclick="window.open('/users/sign_in', '_self')">Log in</button>
+                <button class="btn-outlined w-full mt-5" onclick="window.open('/users/sign_up', '_self')">Sign up</button>
+            </div>
+        </div>
+    </div>
+</div>
