@@ -16,27 +16,6 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import Vue from "vue/dist/vue.esm.js";
-import ButtonComponent from "../components/Button.vue";
-import InputComponent from "../components/Input.vue";
-import TurbolinksAdapter from "vue-turbolinks";
-import Vuesax from "vuesax";
-import "vuesax/dist/vuesax.css";
 
-// Views
-import LoginView from '../views/Login.vue'
-import SignupView from '../views/SignUp.vue'
-
-Vue.use(Vuesax);
-Vue.use(TurbolinksAdapter);
-
-Vue.component("c-button", ButtonComponent)
-Vue.component("c-input", InputComponent)
-Vue.component("login-view", LoginView)
-Vue.component("signup-view", SignupView)
-
-document.addEventListener("turbolinks:load", () => {
-  new Vue({
-      el: '[data-behavior="vue"]'
-  });
-});
+//Tailwind configuration
+import '../stylesheets/application'

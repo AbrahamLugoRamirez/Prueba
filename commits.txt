@@ -1,6 +1,0 @@
-Modificaciones:
-    general:
-        + Instalado bcrypt, para el cifrado de la contraseña.
-    db:
-        migration:
-            + Nueva migración realizada, para poder agregar el modelo del usuario al devise

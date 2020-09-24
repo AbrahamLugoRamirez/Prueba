@@ -13,17 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-:root {
-    --blue: rgba(28, 144, 217);
-    --darkblue: rgba(21, 32, 43);
-    --lightblue: rgba(29, 161, 242);
-}
-
-body {
-    background-color: var(--darkblue);
-}
-
-* {
-    font-family: 'Baloo Tamma 2', cursive;
-}
