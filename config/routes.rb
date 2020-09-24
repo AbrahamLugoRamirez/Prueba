@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/login', to: 'login#index'
   get '/signup', to: 'user#new'
   post 'user/create', to:'user#create'
+  get 'dashboard', to: 'dashboard#index'
 
   # resource :user
 end

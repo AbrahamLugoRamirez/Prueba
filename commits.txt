@@ -1,21 +1,7 @@
 Modificaciones:
     general:
-        ? Solucionado problema relacionado a la duplicación de vue. Habian packages usando diferentes instancias de Vue.
-        ? Este cambio, el de arriba, se pude visualizar en la creación de un alias dentro de webpack, ubicado en config/webpack/environments.js
-        ? Se creó un alias para vue. vue --> vue/dist/vue.esm.js
+        + Instalado devise
     controller:
-        signup:
-            - Controller eliminado.
-            ? Este controllador no era necesario, ya que no maneja los usuarios como tal.
         user:
-            + Controller agregado.
-            ? Este controllador manejará los usuarios, tanto su creación, edición y eliminación.
-    View:
-        user:
-            new:
-                + Vista agregada.
-                ? Esta vista se encargará de mostrar el formulario de registro.
-    config:
-        routes:
-            ? get --> signup --> user#new --> Ruta modificada.
-            + post --> user/create --> user#create --> Ruta creada
+            ? Ahora para poder crear un usuario se debe llamar a la función user_params, para poder administrar los parametros que se obtienen del cliente.
+            

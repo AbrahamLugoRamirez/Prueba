@@ -89,12 +89,10 @@ export default {
           headers: { "Content-Type": "application/json" },
         })
           .then((res) => {
-            console.log("hola mundo hp")
-            return res.json();
+            if(res.status === 200){
+              window.open('/dashboard', '_self')
+            }
           })
-          .then((res) => {
-            console.log(res);
-          });
       }
     },
   },

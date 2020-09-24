@@ -20,10 +20,7 @@
         <div class="text-white text-4xl">See what's happening in the world right now</div>
         <div class="text-white text-xl">Join Twitter today.</div>
         <vs-col align="center">
-          <vs-button
-            class="focus:outline-none focus:shadow-outline w-full"
-            onclick="window.open('/signup', '_self')"
-          >Sign up</vs-button>
+          <vs-button class="focus:outline-none focus:shadow-outline w-full" onclick="window.open('/signup', '_self')">Sign up</vs-button>
           <vs-button border class="focus:outline-none focus:shadow-outline w-full">Log in</vs-button>
         </vs-col>
       </vs-row>
