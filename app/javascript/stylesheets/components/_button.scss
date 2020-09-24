@@ -1,12 +1,16 @@
 .btn-outlined {
     color: var(--blue);
     border-color: var(--blue);
-    @apply .rounded-full .bg-white .border-2 .font-bold px-4 py-2;
+    @apply .bg-white .border-2;
 }
 
 .btn {
     background-color: var(--blue);
-    @apply .rounded-full .text-white .font-bold px-4 py-2;
+    @apply .text-white;
+}
+
+.btn, .btn-outlined {
+    @apply .rounded-full .font-bold px-4 py-2 .cursor-pointer;
 }
 
 .btn:focus, .btn-outlined:focus {
