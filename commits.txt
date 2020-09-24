@@ -1,15 +1,7 @@
 Modificaciones:
     app:
-        javascript:
-            stylesheets:
-                components:
-                    _button:
-                        ? Cambiados estilos de los botones, para que estos se parescas más a la versión de twitter.
         views:
             devise:
-                registration:
+                passwords:
                     new:
                         + Agregados estilos de tailwind para poder ser más atractiva.
-            dashboard:
-                index:
-                    + Agregado boton para logout.
