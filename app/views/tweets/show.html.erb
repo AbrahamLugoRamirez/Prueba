@@ -1,0 +1,80 @@
+
+<%= form_with(model: Tweet, local: true) do |form|%>
+    <%= form.label :username%>
+    <%= form.text_field :username%>
+    <%= form.label :description%>
+    <%= form.text_area :description%>
+    <%= form.submit "submit" %>
+  <% end %>
+  <div class="flex " >
+  
+    <div class="w-1/5 bg-blue-600	 ">
+    
+    </div>
+  
+    <div class="w-3/6 bg-white  ">
+    
+  
+  
+      <div class="container mx-auto">
+  
+      <div class="border-r  border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400  bg-white  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">    
+      <div class="flex items-center ">
+        <img class="w-10 h-10 rounded-full mr-4" src="../../../assets/images/fotos.jpg" alt="Avatar">
+        
+      
+        <div class="form-group shadow-textarea in">  
+        <textarea class="bg-gray-200 focus:bg-white h-20" id="exampleFormControlTextarea6" rows="3" placeholder="What's happening?"></textarea>
+        </div>
+        
+      </div>
+      <div >
+    
+      
+   
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+          
+      </div>
+    
+  
+  
+    <% @tweets.each do |tweet| %>
+  
+  
+      <div class="border-r  border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400  bg-white  rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">    
+  <div class="flex items-center ">
+    <img class="w-10 h-10 rounded-full mr-4" src="../../assets/images/fotos.jpg" alt="Profile">
+    <div class="h " aling="left">
+    <b><%= tweet.username%></b> 
+    <p><%= tweet.description%></p>
+    </div>
+  </div>
+  
+  </div>
+  
+  <% end %>
+  
+  
+  
+    </div>
+    
+    <div class="w-2/5 bg-white  items-center flex-1 text-center  px-4 py-2 ">  
+  
+  
+    </div>
+  
+  </div>
+  
