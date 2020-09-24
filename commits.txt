@@ -1,7 +1,6 @@
 Modificaciones:
     general:
-        + Instalado devise
-    controller:
-        user:
-            ? Ahora para poder crear un usuario se debe llamar a la función user_params, para poder administrar los parametros que se obtienen del cliente.
-            
+        + Instalado bcrypt, para el cifrado de la contraseña.
+    db:
+        migration:
+            + Nueva migración realizada, para poder agregar el modelo del usuario al devise
