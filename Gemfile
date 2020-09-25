@@ -58,3 +58,6 @@ gem 'devise'
 
 #cypher
 gem 'bcrypt-ruby', '~> 3.0.0'
+
+#environment variables
+gem 'dotenv-rails'
