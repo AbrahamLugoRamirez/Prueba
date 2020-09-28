@@ -1,0 +1,19 @@
+Modificaciones:
+    general:
+        + Instaldo dotenv-rails
+        + Terminado para poder realizar la recuperación de la contraseña.
+    app:
+        mailer:
+            user_mailer:
+                + Clase creada.
+                ? Esta clase se encarga de administrar el correo, por usuario.
+        views:
+            devise:
+                mailer:
+                    passwords:
+                        edit:
+                            + Agregados estilos para poder visualizar mejor el formulario de cambio de contraseña.
+    config:
+        initializers:
+            devise:
+                + Agregados los datos obtenidos desde Gmail, para el envio de correos.
