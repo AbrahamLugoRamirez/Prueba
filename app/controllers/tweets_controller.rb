@@ -15,10 +15,11 @@ def create
     @tweets = Tweet.new(tweets_params)
     
         if @tweets.save
-            redirect_to tweets_path, notice: 'hello'
             
+            redirect_to tweets_path, notice: 'hello'
+            puts "Se guardó bien!"
         else
-            redirect_to tweets_path
+            puts @tweets.errors.full_messages.join(", ")
 
         end
     
