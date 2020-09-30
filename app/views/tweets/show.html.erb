@@ -44,7 +44,9 @@
 
           <%= form_with(model: Tweet, local: true, :class=>"w-full") do |form|%>
 
-          <%= form.text_field :username%>
+               
+          
+          
           <div class="form-group shadow-textarea in w-full">
             <%= form.text_area :description , :class=>"bg-white focus:bg-white h-20 w-full text-3xl", :placeholder=>"What's happening?" %>
           </div>
@@ -84,6 +86,7 @@
           alt="Profile">
         <div class="h " aling="left">
           <b><%= tweet.username%></b>
+          <b>Abraham Lugo Ramirez</b>
           <p><%= tweet.description%></p>
           <div class="flex justify-between ">
           <div class="flex justify-start text-3xl " >
