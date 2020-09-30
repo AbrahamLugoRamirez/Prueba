@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'dashboard' => 'dashboard#index'
 
   devise_for :users
+  resource :tweets
 end
