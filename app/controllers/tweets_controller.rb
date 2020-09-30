@@ -17,6 +17,7 @@ end
 
 private
 def tweets_params
+    
     params.require(:tweet).permit(:username, :description)
 end
 

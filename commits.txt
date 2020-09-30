@@ -1,15 +1,19 @@
 Modificaciones:
+    general:
+        + Instaldo dotenv-rails
+        + Terminado para poder realizar la recuperación de la contraseña.
     app:
-        javascript:
-            stylesheets:
-                components:
-                    _button:
-                        ? Cambiados estilos de los botones, para que estos se parescas más a la versión de twitter.
+        mailer:
+            user_mailer:
+                + Clase creada.
+                ? Esta clase se encarga de administrar el correo, por usuario.
         views:
             devise:
-                registration:
-                    new:
-                        + Agregados estilos de tailwind para poder ser más atractiva.
-            dashboard:
-                index:
-                    + Agregado boton para logout.
+                mailer:
+                    passwords:
+                        edit:
+                            + Agregados estilos para poder visualizar mejor el formulario de cambio de contraseña.
+    config:
+        initializers:
+            devise:
+                + Agregados los datos obtenidos desde Gmail, para el envio de correos.
