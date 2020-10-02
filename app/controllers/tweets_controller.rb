@@ -10,11 +10,11 @@ def show
     @tweets = current_user.tweets
 end
 def new
-    @tweets = Tweet.show
+    @tweets = current_user.show
   end
 
 def create
-    @tweets = Tweet.new(tweets_params)
+    @tweets = current_user.tweets.new(tweets_params)
     
         if @tweets.save
             
@@ -27,7 +27,7 @@ def create
     
 end
 def destroy
-    @post = Tweet.find(params[:id])
+    @post = current_user.tweets.find(params[:id])
     @post.destroy
     redirect_to tweets_path
 end
